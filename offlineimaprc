@@ -1,0 +1,15 @@
+[general]
+accounts = Gmail
+
+[Account Gmail]
+localrepository = Local
+remoterepository = Remote
+
+[Repository Local]
+type = GmailMaildir
+localfolders = ~/Maildir
+
+[Repository Remote]
+type = Gmail
+readonly = True
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt

@@ -16,6 +16,6 @@ RUN mkdir Maildir
 
 ENTRYPOINT [ "./entrypoint.sh" ]
 
-ENV TICKERD_HEALTHCHECK_FILE "/var/log/healthcheck"
+ENV TICKERD_HEALTHCHECK_PORT 9000
 HEALTHCHECK --interval=30s --timeout=3s --start-period=3s --retries=1 \
   CMD ["/usr/bin/tickerd", "-healthcheck"]
